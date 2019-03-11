@@ -1,4 +1,4 @@
-//written by Myungsik Kim 03/11/2019
+//written by Myungsik Kim 03/11/2019 Basic connection
 var http = require('http');
 var url = require('url');
 
@@ -13,8 +13,8 @@ var server = http.createServer(function(request,response){
     if(_url == '/favicon.ico'){
         return response.writeHead(404);
     }
+
     response.writeHead(200);
-    
     console.log(queryData.id);
     
     var template = `
